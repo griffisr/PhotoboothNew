@@ -46,10 +46,12 @@
     <link rel='stylesheet' id='wp-block-library-css' type="text/css" href='CSS/wp-includes/css/dist/block-library/style.min.css' media='all' />
     <link rel='stylesheet' id='wp-block-library-theme-css' type="text/css" href='CSS/wp-includes/css/dist/block-library/theme.min.css' media='all' />
     <link rel='stylesheet' id='font-awesome-5-css' type="text/css" href='CSS/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.1/css/all.min.css' media='all' />
+
     <link rel='stylesheet' id='font-awesome-css' type="text/css" href='CSS/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.1/css/v4-shims.min.' media='all' />
+    
     <link rel='stylesheet' id='fl-builder-layout-24290-css'  href='CSS/wp-content/uploads/bb-plugin/cache/24290-layout.css' media='all' />
     <link rel='stylesheet' id='cpsh-shortcodes-css' type="text/css" href='CSS/wp-content/plugins/column-shortcodes//assets/css/shortcodes.css' media='all' />
-    <link rel='stylesheet' id='jquery-magnificpopup-css' type="text/css" href='/Users/griffis_r/Documents/Coding Projects/MirrorPhotobooth/PhotoboothNew/CSS/wp-content/plugins/bb-plugin/css/jquery.magnificpopup.min.css' media='all' />
+    <link rel='stylesheet' id='jquery-magnificpopup-css' type="text/css" href='CSS/wp-content/plugins/bb-plugin/css/jquery.magnificpopup.min.css' media='all' />
     <link rel='stylesheet' id='bootstrap-css' type="text/css" href='CSS/wp-content/themes/bb-theme/css/bootstrap.min.css' media='all' />
     <link rel='stylesheet' id='fl-automator-skin-css'  href='CSS/wp-content/uploads/bb-theme/skin-60abfa396f860.css' media='all' />
     <link rel='stylesheet' id='pp-animate-css'  href='CSS/wp-content/plugins/bbpowerpack/assets/css/animate.min.css' media='all' />
@@ -60,7 +62,9 @@
     
     <script src='JS/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
     <script src='JS/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
-    
+
+    <!--Components-->
+    <script src='Components/popupNotify.js'></script>    
     
     <link rel="canonical" href="https://rileyg.me/" />
     <link rel='shortlink' href='https://rileyg.me/' />
@@ -117,18 +121,14 @@
     <!--START PAGE CONTENT-->
     <div class="fl-page">
       <!------------------------------Small Nav Bar--------------------------------------------------->
-      <header
-        class="fl-page-header fl-page-header-fixed fl-page-nav-right fl-page-nav-toggle-icon fl-page-nav-toggle-visible-mobile"
-        role="banner"
-      >
+      <header class="fl-page-header fl-page-header-fixed fl-page-nav-right fl-page-nav-toggle-icon fl-page-nav-toggle-visible-mobile" role="banner">
         <div class="fl-page-header-wrap">
           <div class="fl-page-header-container container">
             <div class="fl-page-header-row row">
               <!--Header logo for scrolled nav bar-->
               <div class="col-sm-12 col-md-3 fl-page-logo-wrap">
                 <div class="fl-page-header-logo">
-                  <a href="https://rileyg.me"
-                    ><img
+                  <a href="index.html"><img
                       loading="false"
                       data-no-lazy="1"
                       class="fl-logo-img"
@@ -144,104 +144,49 @@
 
               <div class="col-sm-12 col-md-9 fl-page-fixed-nav-wrap">
                 <div class="fl-page-nav-wrap">
-                  <nav
-                    class="fl-page-nav fl-nav navbar navbar-default navbar-expand-md"
-                    aria-label="Header Menu"
-                    role="navigation"
-                  >
-                    <button
-                      type="button"
-                      class="navbar-toggle navbar-toggler"
-                      data-toggle="collapse"
-                      data-target=".fl-page-nav-collapse"
-                    >
-                      <span
-                        ><i class="fas fa-bars" aria-hidden="true"></i
-                        ><span class="sr-only">Menu</span></span
-                      >
+                  <nav class="fl-page-nav fl-nav navbar navbar-default navbar-expand-md" aria-label="Header Menu"role="navigation">
+
+                    <button type="button" class="navbar-toggle navbar-toggler" data-toggle="collapse" data-target=".fl-page-nav-collapse">
+                      <span><i class="fas fa-bars" aria-hidden="true"></i><span class="sr-only">Menu</span></span>
                     </button>
 
                     <div class="fl-page-nav-collapse collapse navbar-collapse">
-                      <ul
-                        id="menu-maintop"
-                        class="nav navbar-nav navbar-right menu fl-theme-menu"
-                      >
-                        <li
-                          id="menu-item-24402"
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"
-                        >
+                      <ul id="menu-maintop" class="nav navbar-nav navbar-right menu fl-theme-menu">
+                        <li id="menu-item-24402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item">
                           <a href="" class="nav-link">Client Galleries</a>
                         </li>
-                        <li
-                          id="menu-item-24403"
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"
-                        >
-                          <a href="" class="nav-link">Rates/Availability</a>
+                        <li id="menu-item-24403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item">
+                          <a href="photo-booth-rental.html" class="nav-link">Rates/Availability</a>
                         </li>
-                        <li
-                          id="menu-item-24645"
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"
-                        >
-                          <a
-                            href="/photobooth-rental-guide.html"
-                            class="nav-link"
-                            >Rental Guide</a
-                          >
+                        <li id="menu-item-24645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item">
+                          <a href="photobooth-rental-guide.html" class="nav-link">Rental Guide</a>
                         </li>
+
                         <!--Dropdown-->
-                        <li
-                          id="menu-item-24404"
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-24404 nav-item"
-                        >
-                          <a href="" class="nav-link">FAQs</a>
+                        <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-24404 nav-item">
+                          <a href="FAQs.html" class="nav-link">FAQs</a>
                           <div class="fl-submenu-icon-wrap">
                             <span class="fl-submenu-toggle-icon"></span>
                           </div>
                           <ul class="sub-menu">
-                            <li
-                              id="menu-item-24408"
-                              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24408 nav-item"
-                            >
-                              <a
-                                href="/photo-booth-weddings.html"
-                                class="nav-link"
-                                >Weddings</a
-                              >
+                            <li id="menu-item-24408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24408 nav-item">
+                              <a href="Wedding-Rentals.html" class="nav-link">Weddings</a>
                             </li>
-                            <li
-                              id="menu-item-24407"
-                              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24407 nav-item"
-                            >
-                              <a
-                                href="/photo-booth-parties.html"
-                                class="nav-link"
-                                >Parties</a
-                              >
+                            <li id="menu-item-24407" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24407 nav-item">
+                              <a href="Party-Rentals.html" class="nav-link">Parties</a>
                             </li>
-                            <li
-                              id="menu-item-24409"
-                              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24409 nav-item"
-                            >
-                              <a href="/corporate-rentals.html" class="nav-link"
-                                >Corporate</a
-                              >
+                            <li id="menu-item-24409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24409 nav-item">
+                              <a href="Corporate-Rentals.html" class="nav-link">Corporate</a>
                             </li>
                           </ul>
                         </li>
 
-                        <li
-                          id="menu-item-24578"
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24578 nav-item"
-                        >
-                          <a href="/rent.html" class="nav-link"
-                            ><strong>Reservations</strong></a
-                          >
-                        </li>
                       </ul>
                     </div>
                   </nav>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -282,112 +227,57 @@
         <div class="fl-page-header-wrap">
           <div class="fl-page-header-container container">
             <div class="fl-page-header-row row">
+
               <div class="col-sm-12 col-md-4 fl-page-header-logo-col">
-                <div
-                  class="fl-page-header-logo"
-                  itemscope="itemscope"
-                  itemtype="https://schema.org/Organization"
-                >
-                  <a href="https://rileyg.me" itemprop="url"
-                    ><img
-                      loading="false"
-                      data-no-lazy="1"
-                      class="fl-logo-img"
-                      itemscope
-                      itemtype="https://schema.org/ImageObject"
-                      src="Images/comingsoon.png"
-                      data-retina="Images/comingsoon.png"
-                      title=""
-                      alt="Photo Booth Plus Michigan"
-                  /></a>
+                <div class="fl-page-header-logo" itemscope="itemscope" itemtype="https://schema.org/Organization">
+                  <a href="index.html" itemprop="url">
+                    <img loading="false" data-no-lazy="1" class="fl-logo-img" itemscope itemtype="https://schema.org/ImageObject"  src="Images/comingsoon.png" data-retina="Images/comingsoon.png" title="" alt="Facetime Photo Booths"/>
+                  </a>
                 </div>
               </div>
 
               <div class="col-sm-12 col-md-8 fl-page-nav-col">
                 <div class="fl-page-nav-wrap">
-                  <nav
-                    class="fl-page-nav fl-nav navbar navbar-default navbar-expand-md"
-                    aria-label="Header Menu"
-                    itemscope="itemscope"
-                    itemtype="https://schema.org/SiteNavigationElement"
-                    role="navigation"
-                  >
-                    <button
-                      type="button"
-                      class="navbar-toggle navbar-toggler"
-                      data-toggle="collapse"
-                      data-target=".fl-page-nav-collapse"
-                    >
-                      <span
-                        ><i class="fas fa-bars" aria-hidden="true"></i
-                        ><span class="sr-only">Menu</span></span
-                      >
+                  <nav class="fl-page-nav fl-nav navbar navbar-default navbar-expand-md" aria-label="Header Menu" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" role="navigation">
+
+                    <button type="button" class="navbar-toggle navbar-toggler" data-toggle="collapse"  data-target=".fl-page-nav-collapse">
+                      <span><i class="fas fa-bars" aria-hidden="true"></i><span class="sr-only">Menu</span></span>
                     </button>
 
                     <div class="fl-page-nav-collapse collapse navbar-collapse">
-                      <ul
-                        id="menu-maintop-1"
-                        class="nav navbar-nav navbar-right menu fl-theme-menu"
-                      >
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"
-                        >
-                          <a href="Pages/ClientGalleries.html" class="nav-link"
-                            >Client Galleries</a
-                          >
+                      <ul id="menu-maintop-1"class="nav navbar-nav navbar-right menu fl-theme-menu">
+
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item">
+                          <a href="ClientGalleries.html" class="nav-link">Client Galleries</a>
                         </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"
-                        >
-                          <a href="/photo-booth-rental.html" class="nav-link"
-                            >Rates/Availability</a
-                          >
+
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item">
+                          <a href="photo-booth-rental.html" class="nav-link">Rates/Availability</a>
                         </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"
-                        >
-                          <a
-                            href="/photobooth-rental-guide.html"
-                            class="nav-link"
-                            >Rental Guide</a
-                          >
+
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item">
+                          <a href="photobooth-rental-guide.html"class="nav-link">Rental Guide</a>
                         </li>
+
                         <!--Dropdown-->
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-24404 nav-item"
-                        >
-                          <a href="/kiosk-rental.html" class="nav-link">FAQs</a>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-24404 nav-item">
+                          <a href="/FAQs.html" class="nav-link">FAQs</a>
                           <div class="fl-submenu-icon-wrap">
                             <span class="fl-submenu-toggle-icon"></span>
                           </div>
                           <ul class="sub-menu">
-                            <li
-                              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24408 nav-item"
-                            >
-                              <a
-                                href="/photo-booth-weddings.html"
-                                class="nav-link"
-                                >Weddings</a
-                              >
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24408 nav-item">
+                              <a href="Wedding-Rentals.html"class="nav-link">Weddings</a>
                             </li>
-                            <li
-                              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24407 nav-item"
-                            >
-                              <a
-                                href="/photo-booth-parties.html"
-                                class="nav-link"
-                                >Parties</a
-                              >
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24407 nav-item">
+                              <a href="Party-Rentals.html"class="nav-link">Parties</a>
                             </li>
-                            <li
-                              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24409 nav-item"
-                            >
-                              <a href="/corporate-rentals.html" class="nav-link"
-                                >Corporate</a
-                              >
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24409 nav-item">
+                              <a href="Corporate-Rentals.html" class="nav-link">Corporate</a>
                             </li>
                           </ul>
                         </li>
+
                       </ul>
                     </div>
                   </nav>
@@ -397,6 +287,8 @@
           </div>
         </div>
       </header>
+
+      <!------------------------------Main Content--------------------------------------------------->
       <!-- .fl-page-header -->
       <div id="fl-main-content" class="fl-page-content" itemprop="mainContentOfPage" role="main">
         <div class="fl-content-full container">
@@ -419,7 +311,7 @@
                                         <h1 class="fl-callout-title">
                                           <a href="/RatesAvailability.html" target="_self" class="fl-callout-title-link fl-callout-title-text">
                                             <span>
-                                              Photo Photo Booth Rentals in Michigan
+                                              Photo Booth Rentals in Michigan
                                             </span>
                                           </a>
                                         </h1>
@@ -486,6 +378,8 @@
                         </div>
                       </div>
                     </div>
+
+                    <!------------------------------Start (X X X X) Div--------------------------------------------------->
                     <div class="fl-row fl-row-fixed-width fl-row-bg-color fl-node-58eb132b1f69d" data-node="58eb132b1f69d">
                       <div class="fl-row-content-wrap">
                         <div class="uabb-row-separator uabb-top-row-separator"></div>
@@ -507,17 +401,21 @@
                             </div>
                           </div>
 
+
                           <div class="fl-col-group fl-node-58eb132b99b27" data-node="58eb132b99b27">
+
+                            <!-----------Start (X 0 0 0)----------------->
                             <div class="fl-col fl-node-58eb132b99ebc fl-col-small" data-node="58eb132b99ebc">
                               <div class="fl-col-content fl-node-content">
                                 <div class="fl-module fl-module-pp-infobox fl-node-58eb132b1d881" data-node="58eb132b1d881">
                                   <div class="fl-module-content fl-node-content">
                                     <div class="pp-infobox-wrap">
                                       <div class="pp-infobox layout-5">
+
                                         <div class="pp-icon-wrapper animated">
                                           <div class="pp-infobox-icon">
                                             <div class="pp-infobox-icon-inner">
-                                              <span class="pp-icon fa fa-print"></span>
+                                              <!--<span class="pp-icon fa fa-print"></span>  Filler for icon-->
                                             </div>
                                           </div>
                                         </div>
@@ -528,6 +426,7 @@
                                             A Print For Each of Your Guests
                                           </h4>
                                         </div>
+
                                         <div class="pp-infobox-description">
                                           <div class="pp-description-wrap">
                                             <p>
@@ -537,12 +436,15 @@
                                             </p>
                                           </div>
                                         </div>
+
                                       </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
+
+                            <!-----------Start (0 X 0 0)----------------->
                             <div class="fl-col fl-node-58eb13bb4d1c5 fl-col-small" data-node="58eb13bb4d1c5">
                               <div class="fl-col-content fl-node-content">
                                 <div class="fl-module fl-module-pp-infobox fl-node-58eb13bb4c3a6" data-node="58eb13bb4c3a6">
@@ -552,19 +454,18 @@
                                         <div class="pp-icon-wrapper animated">
                                           <div class="pp-infobox-icon">
                                             <div class="pp-infobox-icon-inner">
-                                              <span
-                                                class="pp-icon fa fa-photo"
-                                              ></span>
+                                              <!--<span class="pp-icon fa fa-photo"></span>  Filler for icon ******** -->
                                             </div>
                                           </div>
                                         </div>
                                         <span class="pp-infobox-title-prefix"></span>
+
                                         <div class="pp-infobox-title-wrapper">
                                           <h4 class="pp-infobox-title">
-                                            Photo Lab Quality prints In 30
-                                            Seconds
+                                            Quality prints In 30Seconds
                                           </h4>
                                         </div>
+
                                         <div class="pp-infobox-description">
                                           <div class="pp-description-wrap">
                                             <p>
@@ -575,12 +476,15 @@
                                             </p>
                                           </div>
                                         </div>
+
                                       </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
+
+                            <!-----------Start (0 0 X 0)----------------->
                             <div class="fl-col fl-node-58eb147571d8b fl-col-small" data-node="58eb147571d8b">
                               <div class="fl-col-content fl-node-content">
                                 <div class="fl-module fl-module-pp-infobox fl-node-58eb146edfebf" data-node="58eb146edfebf">
@@ -590,31 +494,35 @@
                                         <div class="pp-icon-wrapper animated">
                                           <div class="pp-infobox-icon">
                                             <div class="pp-infobox-icon-inner">
-                                              <span class="pp-icon fi-check"></span>
+                                              <!--<span class="pp-icon fi-check"></span> Filler for icon-->
                                             </div>
                                           </div>
                                         </div>
                                         <span class="pp-infobox-title-prefix"></span>
+
                                         <div class="pp-infobox-title-wrapper">
                                           <h4 class="pp-infobox-title">
-                                            Complimentary Photo Strip Sleeves
+                                            FILLER TEXT
                                           </h4>
                                         </div>
+
                                         <div class="pp-infobox-description">
                                           <div class="pp-description-wrap">
                                             <p>
-                                              Keep your photos protected for
-                                              years to come with complimentary
-                                              strip sleeves.
+                                              FILLER TEXT FILLER TEXT. FILLER TEXT FILLER TEXT. FILLER TEXT FILLER TEXT. FILLER TEXT FILLER TEXT. 
+                                              FILLER TEXT
                                             </p>
                                           </div>
                                         </div>
+
                                       </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
+
+                            <!-----------Start (0 0 0 X)----------------->
                             <div class="fl-col fl-node-58eb147a9ef50 fl-col-small" data-node="58eb147a9ef50">
                               <div class="fl-col-content fl-node-content">
                                 <div class="fl-module fl-module-pp-infobox fl-node-58eb1467d43b7" data-node="58eb1467d43b7">
@@ -624,7 +532,7 @@
                                         <div class="pp-icon-wrapper animated">
                                           <div class="pp-infobox-icon">
                                             <div class="pp-infobox-icon-inner">
-                                              <span class="pp-icon fa fa-money"></span>
+                                              <!--<span class="pp-icon fa fa-money"></span> Filler for icon -->
                                             </div>
                                           </div>
                                         </div>
@@ -649,10 +557,13 @@
                                 </div>
                               </div>
                             </div>
+
                           </div>
                         </div>
                       </div>
                     </div>
+
+                    <!------------------------------Start bottom Div filled with text--------------------------------------------------->
                     <div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-58eb154785bbc" data-node="58eb154785bbc">
                       <div class="fl-row-content-wrap">
                         <div class="uabb-row-separator uabb-top-row-separator"></div>
@@ -675,19 +586,13 @@
                                         get to take home a copy of their photos.
                                       </p>
                                       <p>
-                                        We use the same Canon DSLR cameras and
+                                        We use the same Canon Powershot G9 camera and the same
                                         lighting as professional photographers.
-                                        We do not use a $10 PC web-cam or an
-                                        iPad camera. Technology has gotten much
-                                        better on cell phone cameras, but they
-                                        still are no comparison to a
-                                        professional large sensor DSLR.
+                                        We do not use an ipad or poor quality webcam. While cell phone cameras have come a long way,they
+                                        still are no comparison to
+                                        professional equipment.
                                       </p>
-                                      <p>
-                                        We use the fastest Dye Sublimation
-                                        printers on the market today, so every
-                                        single print will be ready in seconds.
-                                      </p>
+                                      
                                       <p>
                                         Our booths have a clean and elegant
                                         design that can be customized to fit the
@@ -1034,15 +939,15 @@
       />
     </noscript>
 
-    <script src="JS/wp-content/uploads/bb-plugin/cache/24290-layout.js?ver=4ded55efd14ac4f4bbad9629a2c518d0" id="fl-builder-layout-24290-js"></script>
-    <script src="JS/wp-content/plugins/bb-plugin/js/jquery.ba-throttle-debounce.min.js?ver=2.4.2.2"id="jquery-throttle-js"></script>
-    <script src="JS/wp-content/plugins/bb-plugin/js/jquery.magnificpopup.min.js?ver=2.4.2.2"id="jquery-magnificpopup-js"></script>
-    <script src="JS/wp-content/themes/bb-theme/js/bootstrap.min.js?ver=1.7.8"id="bootstrap-js"></script>
+    <script src="JS/wp-content/uploads/bb-plugin/cache/24290-layout.js" id="fl-builder-layout-24290-js"></script>
+    <script src="JS/wp-content/plugins/bb-plugin/js/jquery.ba-throttle-debounce.min.js"id="jquery-throttle-js"></script>
+    <script src="JS/wp-content/plugins/bb-plugin/js/jquery.magnificpopup.min.js"id="jquery-magnificpopup-js"></script>
+    <script src="JS/wp-content/themes/bb-theme/js/bootstrap.min.js"id="bootstrap-js"></script>
     <script id="fl-automator-js-extra">var themeopts = { medium_breakpoint: "992", mobile_breakpoint: "768" };</script>
-    <script src="JS/wp-content/themes/bb-theme/js/theme.min.js?ver=1.7.8" id="fl-automator-js"></script>
-    <script src="JS/wp-includes/js/wp-embed.min.js?ver=5.7.6"id="wp-embed-js"></script>
-    <script src="JS/wp-content/uploads/bb-plugin/cache/24416-layout-partial.js?ver=b9669b3029e9a9230188ac20370eb989"id="fl-builder-layout-24416-js"></script>
-    <script src="JS/wp-content/uploads/bb-plugin/cache/24418-layout-partial.js?ver=77ef98f6f1e8707f2bd0dfc7c4ece987"id="fl-builder-layout-24418-js"></script>
+    <script src="JS/wp-content/themes/bb-theme/js/theme.min.js" id="fl-automator-js"></script>
+    <script src="JS/wp-includes/js/wp-embed.min.js"id="wp-embed-js"></script>
+    <script src="JS/wp-content/uploads/bb-plugin/cache/24416-layout-partial.js"id="fl-builder-layout-24416-js"></script>
+    <script src="JS/wp-content/uploads/bb-plugin/cache/24418-layout-partial.js"id="fl-builder-layout-24418-js"></script>
 
     <script id="aepc-pixel-events-js-extra">
       var aepc_pixel_events = {
@@ -1065,6 +970,6 @@
       };
     </script>
 
-    <script src="JS/wp-content/plugins/pixel-caffeine/build/frontend.js?ver=2.3.3" id="aepc-pixel-events-js"></script>
+    <script src="JS/wp-content/plugins/pixel-caffine/build/frontend/frontend.js" id="aepc-pixel-events-js"></script>
   </body>
 </html>
