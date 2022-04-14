@@ -5,21 +5,24 @@
 <body>
     <template>
         <style>
-          ::slotted(p) {
-            padding: 5px;
-            background-color: black;
-            color: white;
-          }
-          ::slotted(p[slot='foo']) {
-            background-color: gray;
-          }
-        </style>
+            ::slotted(p) {
+              padding: 5px;
+              background-color: black;
+              color: white;
+            }
+            ::slotted(p[slot='foo']) {
+              background-color: gray;
+            }
+          </style>
         <slot name="foo">Default text for foo</slot>
         <slot name="bar">Default text for bar</slot>
         <slot name="baz">Default text for baz</slot>
       </template>
 
         <foo-paragraph>
+            <p slot='foo'> f</p>
+            <p slot='foo'> yeah</p>
+            <p slot='foo'> nope</p>
             <p slot='foo'> f</p>
             <p slot='bar'>bar</p>
             <p slot='baz'>baz</p>

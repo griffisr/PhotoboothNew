@@ -1,7 +1,4 @@
 
-const template = document.querySelector('template');
-const templateContent = template.content;
-document.body.appendChild(templateContent);
 
 customElements.define('foo-paragraph',
   class extends HTMLElement {
