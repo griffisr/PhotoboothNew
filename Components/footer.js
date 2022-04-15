@@ -32,13 +32,13 @@
                       <div class="pp-dual-button-content clearfix">
                         <div class="pp-dual-button-inner">
                           <div class="pp-dual-button-1 pp-dual-button pp-button-effect-none">
-                            <a href="/rental-guide.html" class="pp-button" role="button" target="_self" onclick="">
+                            <a href="rental-guide.html" class="pp-button" role="button" target="_self" onclick="">
                               <span class="pp-button-1-text">Rental Guide</span>
                             </a>
                           </div>
                           <div class="pp-spacer"></div>
                           <div class="pp-dual-button-2 pp-dual-button pp-button-effect-none">
-                            <a href="/RatesAvailability.html" class="pp-button" role="button" target="_self" onclick="">
+                            <a href="RatesAvailability.html" class="pp-button" role="button" target="_self" onclick="">
                               <span class="pp-button-2-text">Rates  &amp; Availability</span>
                             </a>
                           </div>
@@ -92,20 +92,20 @@
                   <div class="subShoe">
                     <p>
                       <span style="font-size: 14px">
-                        <a href="/photo-booth-ann-arbor.html">Ann Arbor</a> |
-                        <a href="/photo-booth-livonia-mi.html">Livonia</a> |
-                        <a href="/photo-booth-birmingham-mi.html">Birmingham</a> |
-                        <a href="/photo-booth-bloomfield-mi.html">Bloomfield</a> |
-                        <a href="/photo-booth-novi-mi.html">Novi</a> |
-                        <a href="/photo-booth-troy-mi.html">Troy</a> |                                     
-                        <a href="/photo-booth-royal-oak-mi.html">Royal Oak</a> |
-                        <a href="/photo-booth-detroit-mi.html">Detroit</a> |
-                        <a href="/photo-booth-southfield-mi.html">Southfield</a> |
-                        <a href="/photo-booth-lansing-mi.html">Lansing</a> |
-                        <a href="/photo-booth-flint-mi.html">Flint</a> |
-                        <a href="/photo-booth-grand-rapids-mi.html">Grand Rapids</a> | 
-                        <a href="/photo-booth-jackson-mi.html">Jackson</a> |
-                        <a href="/photo-booth-kalamazoo-mi.html">Kalamazoo</a> |
+                        <a href="photo-booth-ann-arbor.html">Ann Arbor</a> |
+                        <a href="photo-booth-livonia-mi.html">Livonia</a> |
+                        <a href="photo-booth-birmingham-mi.html">Birmingham</a> |
+                        <a href="photo-booth-bloomfield-mi.html">Bloomfield</a> |
+                        <a href="photo-booth-novi-mi.html">Novi</a> |
+                        <a href="photo-booth-troy-mi.html">Troy</a> |                                     
+                        <a href="photo-booth-royal-oak-mi.html">Royal Oak</a> |
+                        <a href="photo-booth-detroit-mi.html">Detroit</a> |
+                        <a href="photo-booth-southfield-mi.html">Southfield</a> |
+                        <a href="photo-booth-lansing-mi.html">Lansing</a> |
+                        <a href="photo-booth-flint-mi.html">Flint</a> |
+                        <a href="photo-booth-grand-rapids-mi.html">Grand Rapids</a> | 
+                        <a href="photo-booth-jackson-mi.html">Jackson</a> |
+                        <a href="photo-booth-kalamazoo-mi.html">Kalamazoo</a> |
                       </span>
                     </p>
                   </div>
@@ -129,10 +129,10 @@
                   <!--Event Type Site Links-->
                   <h4>Event Types</h4>
                   <ul>
-                    <li><a href="/Corporate-Rentals.html">Corporate Events</a></li>
-                    <li><a href="/Wedding-Rentals.html">Weddings</a></li>
-                    <li><a href="/Party-Rentalss.html">Parties</a></li>
-                    <li><a href="/Graduation-Rentals.html">Graduation Parties</a></li>
+                    <li><a href="Corporate-Rentals.html">Corporate Events</a></li>
+                    <li><a href="Wedding-Rentals.html">Weddings</a></li>
+                    <li><a href="Party-Rentalss.html">Parties</a></li>
+                    <li><a href="Graduation-Rentals.html">Graduation Parties</a></li>
                     <li>Charity Functions</li>
                     <li>Bar &amp; Bat Mitzvahs</li>
                     <li>School Events &amp; Prom</li> 
@@ -153,14 +153,14 @@
                   <!--Site Links-->
                   <h4>Links</h4>
                   <ul>
-                    <li><a href="/contact.html">Contact</a></li>
-                    <li><a href="/about.html">About Us</a></li>
-                    <li><a href="/photo-booth-video.html">Videos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="photo-booth-video.html">Videos</a></li>
                     <li><a href="http://galleries.snapfuze.com/">Gallery</a></li>
                     <li><a href="">Ideas</a></li>  <!--Similar to guide-->
-                    <li> <a href="/FAQ.html">FAQ</a> </li>
-                    <li><a href="/testimonials.html">Testimonials</a></li>
-                    <li><a href="/privacy-policy.html">Privacy</a></li>
+                    <li> <a href="FAQ.html">FAQ</a> </li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="privacy-policy.html">Privacy</a></li>
                   </ul>
                 </div>
               </div>
