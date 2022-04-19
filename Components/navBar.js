@@ -156,7 +156,7 @@
                             <a href="" class="nav-link">Client Galleries</a>
                           </li>
                           <li id="menu-item-24403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item">
-                            <a href="photo-booth-rental.html" class="nav-link">Rates/Availability</a>
+                            <a href="RatesAvailability.html" class="nav-link">Rates/Availability</a>
                           </li>
                           <li id="menu-item-24645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item">
                             <a href="photo-booth-rental-guide.html" class="nav-link">Rental Guide</a>
@@ -252,7 +252,7 @@
                           </li>
   
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item">
-                            <a href="photo-booth-rental.html" class="nav-link">Rates/Availability</a>
+                            <a href="RatesAvailability.html" class="nav-link">Rates/Availability</a>
                           </li>
   
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item">
