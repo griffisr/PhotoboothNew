@@ -8,9 +8,6 @@
       <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       <meta http-equiv='X-UA-Compatible' content='IE=edge' />
       <link rel="profile" href="https://gmpg.org/xfn/11" />
-      
-      <!--Favicon -->
-      <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/3004/3004613.png">
   
       <title>FaceTime Photbooths</title>
       
@@ -47,26 +44,23 @@
       
       <link rel='stylesheet' id='wp-block-library-css' type="text/css" href='CSS/wp-includes/css/dist/block-library/style.min.css' media='all' />
       <link rel='stylesheet' id='wp-block-library-theme-css' type="text/css" href='CSS/wp-includes/css/dist/block-library/theme.min.css' media='all' />
-      <link rel='stylesheet' id='font-awesome-5-css' type="text/css" href='CSS/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.1/css/all.min.css' media='all' />
   
-      <link rel='stylesheet' id='font-awesome-css' type="text/css" href='CSS/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.1/css/v4-shims.min.' media='all' />
+  
       
       <link rel='stylesheet' id='fl-builder-layout-24290-css'  href='CSS/wp-content/uploads/bb-plugin/cache/24290-layout.css' media='all' />
       <link rel='stylesheet' id='cpsh-shortcodes-css' type="text/css" href='CSS/wp-content/plugins/column-shortcodes//assets/css/shortcodes.css' media='all' />
       <link rel='stylesheet' id='jquery-magnificpopup-css' type="text/css" href='CSS/wp-content/plugins/bb-plugin/css/jquery.magnificpopup.min.css' media='all' />
+
       <link rel='stylesheet' id='bootstrap-css' type="text/css" href='CSS/wp-content/themes/bb-theme/css/bootstrap.min.css' media='all' />
       <link rel='stylesheet' id='fl-automator-skin-css'  href='CSS/wp-content/uploads/bb-theme/skin-60abfa396f860.css' media='all' />
       <link rel='stylesheet' id='pp-animate-css'  href='CSS/wp-content/plugins/bbpowerpack/assets/css/animate.min.css' media='all' />
       <link rel='stylesheet' id='fl-builder-google-fonts-a0a4696f98041565d38c5d58390b2ea5-css'  href='//fonts.googleapis.com/css?family=Raleway%3A300%2C400%2C700%7CYanone+Kaffeesatz%3A400&#038;ver=5.7.6' media='all' />
-
+  
   
       <link rel='stylesheet' id='foundation-icons-css'  href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css?ver=2.4.2.2' media='all' />
       
       <script src='JS/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
-      <script src='JS/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
-  
-      <!--Components-->
-      <script src='Components/popupNotify.js'></script>    
+      <script src='JS/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>  
   
       
       
@@ -164,7 +158,7 @@
   
                           <!--Dropdown-->
                           <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-24404 nav-item">
-                            <a href="FAQs.html" class="nav-link">FAQs</a>
+                            <a  href="FAQs.html" class="nav-link">FAQs</a>
                             <div class="fl-submenu-icon-wrap">
                               <span class="fl-submenu-toggle-icon"></span>
                             </div>
@@ -256,12 +250,12 @@
                           </li>
   
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item">
-                            <a href="photo-booth-rental-guide.html" class="nav-link">Rental Guide</a>
+                            <a href="photo-booth-rental-guide.html"class="nav-link">Rental Guide</a>
                           </li>
   
                           <!--Dropdown-->
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-24404 nav-item">
-                            <a href="/FAQs.html" class="nav-link">FAQs</a>
+                            <a href="FAQs.html" class="nav-link">FAQs</a>
                             <div class="fl-submenu-icon-wrap">
                               <span class="fl-submenu-toggle-icon"></span>
                             </div>
