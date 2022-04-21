@@ -93,19 +93,19 @@
                     <p>
                       <span style="font-size: 14px">
                         <a href="photo-booth-ann-arbor.html">Ann Arbor</a> |
-                        <a href="photo-booth-livonia-mi.html">Livonia</a> |
-                        <a href="photo-booth-birmingham-mi.html">Birmingham</a> |
-                        <a href="photo-booth-bloomfield-mi.html">Bloomfield</a> |
-                        <a href="photo-booth-novi-mi.html">Novi</a> |
-                        <a href="photo-booth-troy-mi.html">Troy</a> |                                     
-                        <a href="photo-booth-royal-oak-mi.html">Royal Oak</a> |
-                        <a href="photo-booth-detroit-mi.html">Detroit</a> |
-                        <a href="photo-booth-southfield-mi.html">Southfield</a> |
-                        <a href="photo-booth-lansing-mi.html">Lansing</a> |
-                        <a href="photo-booth-flint-mi.html">Flint</a> |
-                        <a href="photo-booth-grand-rapids-mi.html">Grand Rapids</a> | 
-                        <a href="photo-booth-jackson-mi.html">Jackson</a> |
-                        <a href="photo-booth-kalamazoo-mi.html">Kalamazoo</a> |
+                        <a href="photo-booth-livonia-mi.html">FILLER</a> |
+                        <a href="photo-booth-birmingham-mi.html">FILLER</a> |
+                        <a href="photo-booth-bloomfield-mi.html">FILLER</a> |
+                        <a href="photo-booth-novi-mi.html">FILLER</a> |
+                        <a href="photo-booth-troy-mi.html">FILLER</a> |                                     
+                        <a href="photo-booth-royal-oak-mi.html">FILLER</a> |
+                        <a href="photo-booth-detroit-mi.html">FILLER</a> |
+                        <a href="photo-booth-southfield-mi.html">FILLER</a> |
+                        <a href="photo-booth-lansing-mi.html">FILLER</a> |
+                        <a href="photo-booth-flint-mi.html">FILLER</a> |
+                        <a href="photo-booth-grand-rapids-mi.html">FILLER</a> | 
+                        <a href="photo-booth-jackson-mi.html">FILLER</a> |
+                        <a href="photo-booth-kalamazoo-mi.html">FILLER</a> |
                       </span>
                     </p>
                   </div>
