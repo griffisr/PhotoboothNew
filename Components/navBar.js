@@ -9,7 +9,7 @@
       <meta http-equiv='X-UA-Compatible' content='IE=edge' />
       <link rel="profile" href="https://gmpg.org/xfn/11" />
   
-      <title>FaceTime Photbooths</title>
+      <title>Snap Booth</title>
       
       <meta name='robots' content='max-image-preview:large' />
       <link rel='dns-prefetch' href='//fonts.googleapis.com' />
