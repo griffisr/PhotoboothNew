@@ -145,38 +145,22 @@
                       </button>
   
                       <div class="fl-page-nav-collapse collapse navbar-collapse">
-                        <ul id="menu-maintop" class="nav navbar-nav navbar-right menu fl-theme-menu">
-                          <li id="menu-item-24402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item">
-                            <a href="" class="nav-link">Client Galleries</a>
-                          </li>
-                          <li id="menu-item-24403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item">
-                            <a href="RatesAvailability.html" class="nav-link">Rates/Availability</a>
-                          </li>
-                          <li id="menu-item-24645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item">
-                            <a href="photo-booth-rental-guide.html" class="nav-link">Rental Guide</a>
-                          </li>
-  
-                          <!--Dropdown-->
-                          <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-24404 nav-item">
-                            <a  href="FAQs.html" class="nav-link">FAQs</a>
-                            <div class="fl-submenu-icon-wrap">
-                              <span class="fl-submenu-toggle-icon"></span>
-                            </div>
-                            <ul class="sub-menu">
-                              <li id="menu-item-24408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24408 nav-item">
-                                <a href="Wedding-Rentals.html" class="nav-link">Weddings</a>
-                              </li>
-                              <li id="menu-item-24407" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24407 nav-item">
-                                <a href="Party-Rentals.html" class="nav-link">Parties</a>
-                              </li>
-                              <li id="menu-item-24409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24409 nav-item">
-                                <a href="Corporate-Rentals.html" class="nav-link">Corporate</a>
-                              </li>
-                            </ul>
-                          </li>
-  
-                        </ul>
-                      </div>
+								<ul id="menu-maintop" class="nav navbar-nav navbar-right menu fl-theme-menu">
+                  <li id="menu-item-24403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"><a href="RatesAvailability.html" class="nav-link">Request Quote</a></li>
+                  <li id="menu-item-24645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="photo-booth-rental-guide.html" class="nav-link">Rental Guide</a></li>
+
+
+                  <li id="menu-item-24402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"><a href="ClientGalleries.html" class="nav-link">Client Galleries</a></li>
+                  <!--Dropdown-->
+                  <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-24404 nav-item"><a href="" class="nav-link">FAQs</a><div class="fl-submenu-icon-wrap"><span class="fl-submenu-toggle-icon"></span></div>
+                  <ul class="sub-menu">
+                    <li id="menu-item-24408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24408 nav-item"><a href="photo-booth-weddings.html" class="nav-link">Weddings</a></li>
+                    <li id="menu-item-24407" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24407 nav-item"><a href="photo-booth-parties.html" class="nav-link">Parties</a></li>
+                    <li id="menu-item-24409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24409 nav-item"><a href="corporate-rentals.html" class="nav-link">Corporate</a></li>
+                  </ul>
+                  </li>
+                </ul>							
+              </div>
                     </nav>
                   </div>
                 </div>
@@ -239,40 +223,20 @@
                       </button>
   
                       <div class="fl-page-nav-collapse collapse navbar-collapse">
-                        <ul id="menu-maintop-1"class="nav navbar-nav navbar-right menu fl-theme-menu">
-  
-                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item">
-                            <a href="ClientGalleries.html" class="nav-link">Client Galleries</a>
-                          </li>
-  
-                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item">
-                            <a href="RatesAvailability.html" class="nav-link">Rates/Availability</a>
-                          </li>
-  
-                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item">
-                            <a href="photo-booth-rental-guide.html"class="nav-link">Rental Guide</a>
-                          </li>
-  
-                          <!--Dropdown-->
-                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-24404 nav-item">
-                            <a href="FAQs.html" class="nav-link">FAQs</a>
-                            <div class="fl-submenu-icon-wrap">
-                              <span class="fl-submenu-toggle-icon"></span>
-                            </div>
-                            <ul class="sub-menu">
-                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24408 nav-item">
-                                <a href="Wedding-Rentals.html"class="nav-link">Weddings</a>
+                      <ul id="menu-maintop-1" class="nav navbar-nav navbar-right menu fl-theme-menu">
+                  
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"><a href="RatesAvailability.html" class="nav-link">Request Quote</a></li>
+                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="photo-booth-rental-guide.html" class="nav-link">Rental Guide</a></li>
+                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"> <a href="ClientGalleries.html" class="nav-link">Client Galleries</a></li>
+                                <!--Dropdown-->
+                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-24404 nav-item"><a href="FAQs.html" class="nav-link">FAQs</a><div class="fl-submenu-icon-wrap"><span class="fl-submenu-toggle-icon"></span></div>
+                                <ul class="sub-menu">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24408 nav-item"><a href="photo-booth-weddings.html" class="nav-link">Weddings</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24407 nav-item"><a href="photo-booth-parties.html" class="nav-link">Parties</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24409 nav-item"><a href="corporate-rentals.html" class="nav-link">Corporate</a></li>
+                                </ul>
                               </li>
-                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24407 nav-item">
-                                <a href="Party-Rentals.html"class="nav-link">Parties</a>
-                              </li>
-                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24409 nav-item">
-                                <a href="Corporate-Rentals.html" class="nav-link">Corporate</a>
-                              </li>
-                            </ul>
-                          </li>
-  
-                        </ul>
+                    </ul>	
                       </div>
                     </nav>
                   </div>
