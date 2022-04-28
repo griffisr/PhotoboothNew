@@ -1,5 +1,5 @@
 body {
-  background-color: #c1dee6;
+  background-color: #725F3B;
   color: #001929;
   font-family: "Raleway", sans-serif;
   font-size: 17px;
@@ -402,7 +402,7 @@ body.rtl .fl-screen-reader-text {
 }
 .fl-page-nav ul.sub-menu {
   background-clip: padding-box;
-  background-color: #fff;
+  background-color: #E4DBCC;
   border-top: 3px solid #f0ac8a;
   font-size: 14px;
   float: none;
@@ -1643,8 +1643,10 @@ body.fl-framework-bootstrap-4 nav a.no-menu {
   border-bottom: 1px solid #e6e6e6;
   font-size: 12px;
   line-height: 14px;
-  border-color: #126b88;
-  background-color: #0a3d4d;
+
+
+  border-color: #515942;
+  background-color: #A38B64;
   color: #fff;
 }
 .fl-page-bar *,
@@ -2636,7 +2638,7 @@ body.fl-framework-bootstrap-4 nav a.no-menu {
     color: #e05915;
   }
   .fl-page-nav-right .fl-page-nav-wrap .navbar-nav li > a {
-    color: #0a3d4d;
+    color: #ffffff;
   }
   .fl-page-nav-right .fl-page-nav-wrap .navbar-nav li > a:hover,
   .fl-page-nav-right .fl-page-nav-wrap .navbar-nav li > a:focus {
