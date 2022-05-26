@@ -1206,7 +1206,7 @@ img.mfp-img {
 }
 
 @media (max-width: 768px) {
-  .fl-node-590842fbe3955 > .fl-module-content {
+  .fl-node-590842fbe3955 {
     padding-left: 15%;
   }
 }
