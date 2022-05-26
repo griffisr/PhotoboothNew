@@ -1,5 +1,5 @@
 body {
-  background-color: #725f3b1c;
+  background-color: #8d9fa9;
   color: #001929;
   font-family: "Raleway", sans-serif;
   font-size: 17px;
@@ -2637,8 +2637,18 @@ body.fl-framework-bootstrap-4 nav a.no-menu {
   .fl-page-nav-right .fl-page-nav-wrap a.fab:focus {
     color: #e05915;
   }
+
+  
+
+
+
+
+
+
+
+/* HEADER NAV BAR COLORS*/
   .fl-page-nav-right .fl-page-nav-wrap .navbar-nav li > a {
-    color: #ffffff;
+    color: #406172;
   }
   .fl-page-nav-right .fl-page-nav-wrap .navbar-nav li > a:hover,
   .fl-page-nav-right .fl-page-nav-wrap .navbar-nav li > a:focus {
