@@ -1,0 +1,57 @@
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding-left: 15%;
+}
+
+.gallery:hover .gallery__image {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+ 
+.gallery__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+}
+
+.gallery__link {
+  margin: 2px;
+  overflow: hidden;
+}
+
+.gallery__link:hover .gallery__image {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.gallery__link:hover .gallery__caption {
+  opacity: 1;
+}
+
+.gallery__thumb {
+  position: relative;
+}
+
+.gallery__image {
+  display: block;
+  width: 100%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.gallery__image:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*# sourceMappingURL=tiledPics.css.map */
