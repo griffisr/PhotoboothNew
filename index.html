@@ -437,20 +437,24 @@ CSS Migrated from BB theme:
 
                     <div id="quad">
                       <figure>
-                      <img src="Images/GalleryImages/wedding.jpg" alt="rose-red-wine">
-                      <figcaption><a href="Wedding-Rentals.html">WEDDINGS</a></figcaption>
+                        <a href="Wedding-Rentals.html">
+                      <img src="Images/GalleryImages/wedding.jpg"></a>
+                      <figcaption>WEDDINGS</figcaption>
                       </figure>
                       <figure>
-                        <img src="Images/GalleryImages/party.jpeg" alt>
-                        <figcaption><a href="Wedding-Rentals.html">PARTIES</a></figcaption>
+                        <a href="Party-Rentals.html"></a>
+                        <img src="Images/GalleryImages/party.jpeg" alt></a>
+                        <figcaption>PARTIES</figcaption>
                       </figure>
                       <figure>
-                        <img src="Images/GalleryImages/img3.jpeg" alt>
-                        <figcaption><a href="Wedding-Rentals.html">CORPORATE EVENTS</a></figcaption>
+                        <a href="Corporate-Rentals.html"></a>
+                        <img src="Images/GalleryImages/img3.jpeg" alt></a>
+                        <figcaption>CORPORATE EVENTS</figcaption>
                       </figure>
                       <figure>
-                        <img src="Images/GalleryImages/kids.jpeg" alt>
-                        <figcaption><a href="Wedding-Rentals.html">SO MUCH MORE!</a></figcaption>
+                        <a href="Graduation-Rentals.html"></a>
+                        <img src="Images/GalleryImages/kids.jpeg" alt></a>
+                        <figcaption>SO MUCH MORE!</figcaption>
                       </figure>
                     </div>
 
@@ -849,10 +853,13 @@ CSS Migrated from BB theme:
 
 </div><!-- .fl-page -->
 <!-------------------------------Finish Content-------------------------------------------------->
-<script>var quadimages = document.querySelectorAll("#quad figure");
+<script>
+var quadimages = document.querySelectorAll("#quad figure");
   for(i=0; i<quadimages.length; i++) {
-    quadimages[i].addEventListener('click', function(){ this.classList.toggle("expanded"); quad.classList.toggle("full") }); 
-  }</script>
+    quadimages[i].addEventListener('mouseover', function(){ this.classList.toggle("expanded"); quad.classList.toggle("full") }); 
+    quadimages[i].addEventListener('mouseout', function(){ this.classList.toggle("expanded"); quad.classList.toggle("full") }); 
+  }
+  </script>
 
 
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=297033134396801&amp;ev=PageView&amp;noscript=1"/></noscript>
