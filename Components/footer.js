@@ -81,41 +81,6 @@
   <div class="fl-col fl-node-59078ee664dfe fl-col-has-cols" data-node="59078ee664dfe">
     <div class="fl-col-content fl-node-content">
 
-      <!-----------Start "Cities We Serve" Footer----------------->
-      <div class="fl-module fl-module-rich-text fl-node-59078ee664e3f" data-node="59078ee664e3f">
-        <div class="fl-module-content fl-node-content">
-          <div class="fl-rich-text">
-            <h4 style="text-align: left">Cities We Serve</h4>
-            <div id="header">
-              <div id="subFooter">
-                <div class="subFooterBkg">
-                  <div class="subShoe">
-                    <p>
-                      <span style="font-size: 14px">
-                        <a href="photo-booth-ann-arbor.html">Ann Arbor</a> |
-                        <a href="photo-booth-livonia-mi.html">FILLER</a> |
-                        <a href="photo-booth-birmingham-mi.html">FILLER</a> |
-                        <a href="photo-booth-bloomfield-mi.html">FILLER</a> |
-                        <a href="photo-booth-novi-mi.html">FILLER</a> |
-                        <a href="photo-booth-troy-mi.html">FILLER</a> |                                     
-                        <a href="photo-booth-royal-oak-mi.html">FILLER</a> |
-                        <a href="photo-booth-detroit-mi.html">FILLER</a> |
-                        <a href="photo-booth-southfield-mi.html">FILLER</a> |
-                        <a href="photo-booth-lansing-mi.html">FILLER</a> |
-                        <a href="photo-booth-flint-mi.html">FILLER</a> |
-                        <a href="photo-booth-grand-rapids-mi.html">FILLER</a> | 
-                        <a href="photo-booth-jackson-mi.html">FILLER</a> |
-                        <a href="photo-booth-kalamazoo-mi.html">FILLER</a> |
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-------------End "Cities We Serve" Footer----------------->
 
       <!-----------Start(X X X)Footer----------------->
       <div class="fl-col-group fl-node-59078ee664e7e fl-col-group-nested" data-node="59078ee664e7e">
@@ -176,13 +141,13 @@
               <div class="fl-module-content fl-node-content">
                 <div class="fl-rich-text">
 
-                  <h4>Reach Out</h4>
-                  <p>
-                    Facetime Photo Booths<br />
-                    201 Cherry Lane Dr<br />
-                    Milan, MI 48160<br />
-                    <a href="tel:">(XXX) XXX-XXXX</a>
-                  </p>
+                <h4>Reach Out</h4>
+                <p>
+                  Snap Booth Photos<br />
+                  <br />
+                  Milan, MI 48160<br />
+                  <a href="tel:">(734) 478-6298</a>
+                </p>
 
                 </div>
               </div>
