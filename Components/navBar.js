@@ -233,7 +233,7 @@
                 </div>
               </div>
       
-              <div class="col-sm-12 col-md-8 fl-page-nav-col" style="padding-top: 20%;">
+              <div class="col-sm-12 col-md-8 fl-page-nav-col" style="padding-top: 45px;">
                 <div class="fl-page-nav-wrap">
                   <nav class="fl-page-nav fl-nav navbar navbar-default navbar-expand-md" aria-label="Header Menu" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" role="navigation">
       

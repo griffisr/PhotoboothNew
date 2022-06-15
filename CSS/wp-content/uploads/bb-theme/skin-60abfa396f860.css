@@ -297,7 +297,7 @@ body.rtl .fl-screen-reader-text {
 .fl-page-nav .navbar-nav,
 .fl-page-nav .navbar-nav a {
   font-family: "Helvetica", Verdana, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 400;
   line-height: 1.4;
   text-transform: capitalize;
@@ -1087,14 +1087,14 @@ a.button:hover {
 button,
 input[type="button"],
 input[type="submit"] {
-  background: #e05915;
+  background: #d7b075;
   color: #fff;
   font-size: 16px;
   line-height: 1.2;
   padding: 6px 12px;
   font-weight: normal;
   text-shadow: none;
-  border: 1px solid #a84310;
+  border: 1px solid #c39f69;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -1105,7 +1105,7 @@ input[type="submit"] {
 button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
-  background-color: #27b5ba;
+  background-color: #8d9fa9;
   color: #000;
   border: 1px solid #1c8487;
   text-decoration: none;
@@ -1402,7 +1402,7 @@ img.mfp-img {
   .fl-page-nav-wrap a.fab:hover,
   .fl-page-nav-wrap a.fas:focus,
   .fl-page-nav-wrap a.fab:focus {
-    color: #e05915;
+    color: #ffffff;
   }
   .fl-page-nav-wrap .navbar-nav li > a {
     color: #0a3d4d;
@@ -2657,7 +2657,7 @@ body.fl-framework-bootstrap-4 nav a.no-menu {
 
   /*focus on small nav bar*/
   .fl-page-nav-right .fl-page-nav-wrap .navbar-nav li > a:focus {
-    color: #ffffff;
+    color: #d7b075;
   }
   .fl-page-nav-right .fl-page-nav-wrap .navbar-nav li.current-menu-ancestor > a,
   .fl-page-nav-right .fl-page-nav-wrap .navbar-nav li.current-menu-parent > a,
