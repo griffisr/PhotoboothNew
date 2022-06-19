@@ -16,7 +16,7 @@
         
             
            e.preventDefault(); 
-           var URL = "https://f5ov7lmrz6ofgcs5jpnzxiz7ku0qhnlq.lambda-url.us-east-2.on.aws/ ";
+           var URL = "https://vpppichqf5.execute-api.us-east-2.amazonaws.com/prod/email";
 
 
            var name = document.getElementById("name-input").value;
@@ -73,23 +73,25 @@
             console.log(data)
 
             var xmlhttp = new XMLHttpRequest();
-            xmlhttp.open("POST", "https://f5ov7lmrz6ofgcs5jpnzxiz7ku0qhnlq.lambda-url.us-east-2.on.aws/");
+            xmlhttp.open("POST", "https://vpppichqf5.execute-api.us-east-2.amazonaws.com/prod/email");
             xmlhttp.setRequestHeader("Content-Type", "application/json");
+
             xmlhttp.send(JSON.stringify(data));
             xmlhttp.onreadystatechange = function() {
             if (xmlhttp.readyState === 4) {
                 var response = JSON.parse(xmlhttp.responseText);
                 if (xmlhttp.status === 200 ) {
                     console.log('successful');
-                    alert("Thank you! Your response has been submitted!")
+                    alert("Thank you! Your information has been submitted!")
                 } else {
                     console.log('failed');
                 }
             }
         }
 
-        document.getElementById('contact-form').reset();
+       // document.getElementById('contact-form').reset();
 
+        
         }
     </script>
 
