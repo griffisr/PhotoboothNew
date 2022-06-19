@@ -12,15 +12,44 @@
     function submitToAPI(e) {
 
       
-            console.log("testing")
+         
+        
+            
            e.preventDefault(); 
-           var URL = "https://ohnlkfb52c.execute-api.us-east-2.amazonaws.com/Testing/email";
+           var URL = "https://f5ov7lmrz6ofgcs5jpnzxiz7ku0qhnlq.lambda-url.us-east-2.on.aws/ ";
 
 
            var name = document.getElementById("name-input").value;
            var subject = document.getElementById("subject-input").value;
            var email = document.getElementById("email-input").value;
-           var message = document.getElementById("message-input").value;
+           var location = document.getElementById("citySTATE").value;
+           var eventDesc = document.getElementById("eventDesc").value;
+           var venue = document.getElementById("venue").value;
+           var guestCount = document.getElementById("guestCount").value;
+           var indoorOutdoor = "";
+
+           if(document.getElementById("field_97kd9u-0").checked){
+            indoorOutdoor = document.getElementById("field_97kd9u-0").value
+          }
+          else if(document.getElementById("field_97kd9u-0").checked){
+            indoorOutdoor = document.getElementById("field_97kd9u-1").value
+          }
+          else if(document.getElementById("field_97kd9u-0").checked){
+            indoorOutdoor = document.getElementById("field_97kd9u-2").value
+          }
+          else if(document.getElementById("field_97kd9u-0").checked){
+            indoorOutdoor = document.getElementById("field_97kd9u-3").value
+          }
+          else if(document.getElementById("field_97kd9u-0").checked){
+            indoorOutdoor = document.getElementById("field_97kd9u-4").value
+          }
+
+          var foundUs = document.getElementById("field_t1zhai").value
+
+          var referred = document.getElementById("referredBy").value
+       
+          var message = document.getElementById("message-input").value;
+
            if (name=="" || subject=="" || email=="" || message=="")
             {
                 alert("Please Fill All Required Field");
@@ -32,12 +61,19 @@
               name : name,
               subject : subject,
               email : email,
+              location: location,
+              eventDesc: eventDesc,
+              venue: venue,
+              guestCount: guestCount,
+              indoorOutdoor: indoorOutdoor,
+              foundUs: foundUs,
+              referred: referred,
               message : message
             };
             console.log(data)
 
             var xmlhttp = new XMLHttpRequest();
-            xmlhttp.open("POST", "https://ohnlkfb52c.execute-api.us-east-2.amazonaws.com/Testing/email");
+            xmlhttp.open("POST", "https://f5ov7lmrz6ofgcs5jpnzxiz7ku0qhnlq.lambda-url.us-east-2.on.aws/");
             xmlhttp.setRequestHeader("Content-Type", "application/json");
             xmlhttp.send(JSON.stringify(data));
             xmlhttp.onreadystatechange = function() {
@@ -122,17 +158,6 @@
                                     <input type="hidden" name="item_meta[0]" value="" />
                                     <input type="hidden" id="frm_submit_entry_461" name="frm_submit_entry_461" value="ee485a3d3a" /><input type="hidden" name="_wp_http_referer" value="/contact-us/" />
                                     <div id="frm_field_23281_container" class="frm_form_field form-field  frm_required_field frm_top_container">
-                                        <label  class="frm_primary_label">*We service locations in Michigan, Ohio, and Indiana. We serve MI,OH,IN. Where is your event?
-                                            <span class="frm_required">*</span>
-                                        </label>
-                                        <div class="frm_opt_container">			<div class="frm_radio"><label for="field_c9s3ok-0">            <input type="radio" name="item_meta[23281]" id="field_c9s3ok-0" value="Florida"   data-reqmsg="This field cannot be blank."  /> Michigan</label></div>
-                                          <div class="frm_radio"><label for="field_c9s3ok-1">            <input type="radio" name="item_meta[23281]" id="field_c9s3ok-1" value="Alabama"   data-reqmsg="This field cannot be blank."  /> Ohio</label></div>
-                                          <div class="frm_radio"><label for="field_c9s3ok-2">            <input type="radio" name="item_meta[23281]" id="field_c9s3ok-2" value="Mississippi"   data-reqmsg="This field cannot be blank."  /> Indiana</label></div>
-                                          <div class="frm_radio"><label for="field_c9s3ok-3">            
-                                    </div>
-                                        
-                                        
-                                    </div>
 
 
 
@@ -140,24 +165,24 @@
                                         <label class="frm_pos_ frm_primary_label">* Event City &amp; State
                                             <span class="frm_required">*</span>
                                         </label>
-                                        <input type="text" id="field_xikkyp" name="item_meta[13604]" value=""  data-reqmsg="Please enter"  />
+                                        <input type="text" id="citySTATE" name="citySTATE" value=""  data-reqmsg="Please enter"  />
                                     
                                         
                                     </div>
                                     <div id="frm_field_19733_container" class="frm_form_field form-field  frm_required_field frm_top_container">
-                                        <label for="field_4a3qit" class="frm_primary_label">* Event Type/Description
+                                        <label for="eventDesc" class="frm_primary_label">* Event Type/Description
                                             <span class="frm_required">*</span>
                                         </label>
-                                        <input type="text" id="field_4a3qit" name="item_meta[19733]" value=""  data-reqmsg="This field cannot be blank."  />
+                                        <input type="text" id="eventDesc" name="eventDesc" value=""  data-reqmsg="This field cannot be blank."  />
                                     
                                         <div class="frm_description">(i.e., My Wedding, Corporate Party, Wine Festival, etc.)</div>
                                         
                                     </div>
                                     <div id="frm_field_26827_container" class="frm_form_field form-field  frm_top_container">
-                                        <label for="field_qphl" class="frm_primary_label">Event Venue
+                                        <label for="venue" class="frm_primary_label">Event Venue
                                             <span class="frm_required"></span>
                                         </label>
-                                        <input type="text" id="field_qphl" name="item_meta[26827]" value=""    />
+                                        <input type="text" id="venue" name="venue" value=""    />
                                     
                                         <div class="frm_description">Venue info helps us suggest the best setup for your event. (Optional)</div>
                                         
@@ -166,7 +191,7 @@
                                         <label class="frm_pos_ frm_primary_label">* Number of Guests
                                             <span class="frm_required">*</span>
                                         </label>
-                                        <select name="item_meta[13606]" id="field_i6n7qp"  data-reqmsg="Please select"  >
+                                        <select name="guestCount" id="guestCount"  data-reqmsg="Please select"  >
                                         <option value=""  selected="selected"> </option>
                                             <option value="Less than 50" >Less than 50</option>
                                             <option value="Approximately 50-75" >Approximately 50-75</option>
@@ -221,7 +246,7 @@
                                         <label class="frm_pos_ frm_primary_label">Please tell us who referred you! (optional)
                                             <span class="frm_required"></span>
                                         </label>
-                                        <input type="text" id="field_jbvx42" name="item_meta[13610]" value=""    />
+                                        <input type="text" id="referredBy" name="item_meta[13610]" value=""    />
                                     
                                         
                                     </div>
@@ -239,13 +264,66 @@
                                         
                                         
                                     </div>
+                                    '
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    var AWS = require('aws-sdk');
+var ses = new AWS.SES();
+ 
+var RECEIVER = 'ragriffis@gmail.com';
+var SENDER = 'ragriffis@gmail.com';
+
+var response = {
+ "isBase64Encoded": false,
+ "headers": { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': 'example.com'},
+ "statusCode": 200,
+ "body": "{\"result\": \"Success.\"}"
+ };
+
+exports.handler = function (event, context) {
+    console.log('Received event:', event);
+    sendEmail(event, function (err, data) {
+        context.done(err, null);
+    });
+};
+ 
+function sendEmail (event, done) {
+    var params = {
+        Destination: {
+            ToAddresses: [
+                RECEIVER
+            ]
+        },
+        Message: {
+            Body: {
+                Text: {
+                    Data: 'Name: ' + event.name + '\nEvent Date: ' + event.subject + '\nEmail: ' + event.email + '\nEvent City and State: ' + event.location
+                    + '\nEvent Type/Description: ' + event.eventDesc  + '\nEvent Venue: ' + event.venue + '\nGuest Count: ' + event.guestCount 
+                    + '\nIndoor/Outdoor: ' + event.indoorOutdoor + '\nHow did you find us?: ' + event.foundUs + '\nWho were you referred by?: ' + event.referred 
+                    + '\nHow can we help you?: ' + event.message,
+                    Charset: 'UTF-8'
+                }
+            },
+            Subject: {
+                Data: 'Website Referral Form: ' + event.name,
+                Charset: 'UTF-8'
+            }
+        },
+        Source: SENDER
+    };
+    ses.sendEmail(params, done);'
                                     -->
 
                                     <div id="frm_field_13607_container" class="form-field   frm_top_container">
                                         <label class="frm_pos_ frm_primary_label">How can we help you? (optional)
                                             <span class="frm_required"></span>
                                         </label>
-                                        <textarea name="item_meta[13607]" id="field_6dtoou" rows="5"    ></textarea>
+                                        <textarea name="item_meta[13607]" id="message-input" rows="5"    ></textarea>
                                     
                                         
                                     </div>
