@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en-US">
 <head>
 <meta charset="UTF-8" />
@@ -16,6 +16,13 @@
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+
+
+  <!--Initialize Firebase-->
+  <script src="https://www.gstatic.com/firebasejs/9.8.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.8.0/firebase-database.js"></script>
+
+
 
 
 <script>
@@ -37,8 +44,9 @@
   }
 </style>
 
-<link rel='stylesheet' type="text/css" href='CSS/imageGallery.css' />
-	<link rel='stylesheet' id='wp-block-library-css' type="text/css" href='CSS/wp-includes/css/dist/block-library/style.min.css' media='all' />
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+<link rel='stylesheet' type="text/css" href='CSS/tiledPics.css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' type="text/css" href='CSS/wp-includes/css/dist/block-library/style.min.css' media='all' />
 <link rel='stylesheet' id='wp-block-library-theme-css' type="text/css" href='CSS/wp-includes/css/dist/block-library/theme.min.css' media='all' />
 <link rel='stylesheet' id='fl-builder-layout-6-css' type="text/css" href='CSS/wp-content/uploads/bb-plugin/cache/6-layout.css' media='all' />
 <link rel='stylesheet' id='cpsh-shortcodes-css' type="text/css" href='CSS/wp-content/plugins/column-shortcodes//assets/css/shortcodes.css' media='all' />
@@ -52,9 +60,13 @@
 <script src='JS/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
 <script src='JS/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
 
+<script src='JS/Firebase/analytics.js'></script>
 
-<link rel="canonical" href="https://rileyg.me/" />
-<link rel='shortlink' href='https://rileyg.me/' />
+
+
+
+<link rel="canonical" href="http://snapboothphotos.com/" />
+<link rel='shortlink' href='http://snapboothphotos.com/' />
 
 
 <style id="wp-custom-css">
@@ -136,7 +148,6 @@ CSS Migrated from BB theme:
 }
 
 
-
 </style>
 </head>
 
@@ -180,9 +191,9 @@ CSS Migrated from BB theme:
                   <!--Dropdown-->
                   <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-24404 nav-item"><a href="" class="nav-link">FAQs</a><div class="fl-submenu-icon-wrap"><span class="fl-submenu-toggle-icon"></span></div>
                   <ul class="sub-menu">
-                    <li id="menu-item-24408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24408 nav-item"><a href="photo-booth-weddings.html" class="nav-link">Weddings</a></li>
-                    <li id="menu-item-24407" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24407 nav-item"><a href="photo-booth-parties.html" class="nav-link">Parties</a></li>
-                    <li id="menu-item-24409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24409 nav-item"><a href="corporate-rentals.html" class="nav-link">Corporate</a></li>
+                    <li id="menu-item-24408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24408 nav-item"><a href="Wedding-Rentals.html" class="nav-link">Weddings</a></li>
+                    <li id="menu-item-24407" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24407 nav-item"><a href="Party-Rentals.html" class="nav-link">Parties</a></li>
+                    <li id="menu-item-24409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24409 nav-item"><a href="Corporate-Rentals.html" class="nav-link">Corporate</a></li>
                   </ul>
                   </li>
                 </ul>							
@@ -230,7 +241,7 @@ CSS Migrated from BB theme:
           </div>
 				</div>
 
-				<div class="col-sm-12 col-md-8 fl-page-nav-col" style="padding-top: 20%;">
+				<div class="col-sm-12 col-md-8 fl-page-nav-col" style="padding-top: 20px;">
 					<div class="fl-page-nav-wrap">
 						<nav class="fl-page-nav fl-nav navbar navbar-default navbar-expand-md" aria-label="Header Menu" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" role="navigation">
 
@@ -324,8 +335,8 @@ CSS Migrated from BB theme:
 	                          <div class="fl-module fl-module-rich-text fl-node-58dabc53d4df8" data-node="58dabc53d4df8">
 	                            <div class="fl-module-content fl-node-content">
 		                            <div class="fl-rich-text">
-	                                <h1>Snap Booth Photo-Booth Rentals of Michigan</h1>
-                                  <p>Available for all types of events! Snap Booth  Photo Booths are the the perfect fit for weddings, school events, parties, corporate events and so much more! Snap Booth  Photo Booths providly photo booths to the MI-OH-IN tri-state area.</p>
+	                                <h1>Snap Booth Photos: Photo Booth Rentals</h1>
+                                  <p>Available for all types of events! Snap Booth  Photo Booths are the the perfect fit for weddings, school events, parties, corporate events and so much more! Snap Booth Photos proudly provides photo booths to the MI-OH-IN tri-state area.</p>
                                 </div>
 	                            </div>
                             </div>
@@ -341,7 +352,7 @@ CSS Migrated from BB theme:
                                     <!-------------------START----------------------1.2.2-->
                                     <!--Left Button-->
                                     <div class="pp-dual-button-1 pp-dual-button pp-button-effect-none">
-                                      <a href="ClientGalleries.html" class="pp-button " role="button" target="_self" onclick="">
+                                      <a href="index.html" class="pp-button " role="button" target="_self" onclick="">
                                           <span class="pp-button-1-text">Client Galleries</span>
                                       </a>
                                     </div>
@@ -375,81 +386,7 @@ CSS Migrated from BB theme:
                       <div class="fl-col-group fl-node-5925277de7e10 fl-col-group-nested" data-node="5925277de7e10">
                             <div class="fl-col fl-node-5925277de804b" data-node="5925277de804b">
                               <div class="fl-col-content fl-node-content">
-                                
-                                <div class="container">
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/100" alt="pic 1">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/200" alt="pic 2">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/300" alt="pic 3">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/400" alt="pic 4">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/500" alt="pic 5">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/600" alt="pic 6">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/150" alt="pic 7">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/250" alt="pic 8">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/350" alt="pic 9">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/450" alt="pic 10">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/550" alt="pic 11">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/650" alt="pic 12">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/110" alt="pic 13">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/210" alt="pic 14">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/310" alt="pic 15">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/410" alt="pic 16">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/510" alt="pic 17">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/610" alt="pic 18">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/125" alt="pic 19">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/225" alt="pic 20">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/325" alt="pic 21">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/425" alt="pic 22">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/525" alt="pic 23">
-                                  </div>
-                                  <div class="child-container">
-                                      <img src="https://picsum.photos/625" alt="pic 24">
-                                  </div>
-                              </div>
+
                                 
                               </div>
                             </div>
@@ -509,145 +446,34 @@ CSS Migrated from BB theme:
 
                   <div class="fl-col-group fl-node-58b55495442dd" data-node="58b55495442dd">
 
-                    <!-------------------START----------------------1.3.1-->
-                    <div class="fl-col fl-node-58e9c2c80416f fl-col-small" data-node="58e9c2c80416f">
-                      <div class="fl-col-content fl-node-content">
-                        <div class="fl-module fl-module-pp-image fl-node-58e9c28b454d7" data-node="58e9c28b454d7">
-                          <div class="fl-module-content fl-node-content">
-                            <div class="pp-photo-container">
-                              <div class="pp-photo pp-photo-align-center pp-photo-align-responsive-default" itemscope itemtype="http://schema.org/ImageObject">
-                                <div class="pp-photo-content ">
-                                  <div class="pp-photo-content-inner">
-                                    <img loading="lazy" width="245" height="172" class="pp-photo-img wp-image-24226 size-full" src="Images/Logos/cover1.jpg" alt="Professional Quality" itemprop="image"  />
-                                    <div class="pp-overlay-bg"></div>
-                                    <div class="pp-photo-caption pp-photo-caption-below" itemprop="caption">Professional Quality</div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <div id="quad">
+                      <figure>
+                        <a href="Wedding-Rentals.html">
+                      <img src="Images/GalleryImages/wedding.jpg"></a>
+                      <figcaption>WEDDINGS</figcaption>
+                      </figure>
+                      <figure>
+                        <a href="Party-Rentals.html"></a>
+                        <img src="Images/GalleryImages/party.jpeg" alt></a>
+                        <figcaption>PARTIES</figcaption>
+                      </figure>
+                      <figure>
+                        <a href="Corporate-Rentals.html"></a>
+                        <img src="Images/GalleryImages/img3.jpeg" alt></a>
+                        <figcaption>CORPORATE EVENTS</figcaption>
+                      </figure>
+                      <figure>
+                        <a href="Graduation-Rentals.html"></a>
+                        <img src="Images/GalleryImages/kids.jpg" alt></a>
+                        <figcaption>SO MUCH MORE!</figcaption>
+                      </figure>
                     </div>
-                    <!-------------------END----------------------1.3.1-->
 
-                    <!-------------------START----------------------1.3.2-->
-                    <div class="fl-col fl-node-58e9c2c80416f fl-col-small" data-node="58e9c2c80416f">
-                      <div class="fl-col-content fl-node-content">
-                        <div class="fl-module fl-module-pp-image fl-node-58e9c28b454d7" data-node="58e9c28b454d7">
-                          <div class="fl-module-content fl-node-content">
-                            <div class="pp-photo-container">
-                              <div class="pp-photo pp-photo-align-center pp-photo-align-responsive-default" itemscope itemtype="http://schema.org/ImageObject">
-                                <div class="pp-photo-content ">
-                                  <div class="pp-photo-content-inner">
-                                    <img loading="lazy" width="245" height="172" class="pp-photo-img wp-image-24226 size-full" src="Images/Logos/cover2.jpg" alt="Professional Quality" itemprop="image"  />
-                                    <div class="pp-overlay-bg"></div>
-                                    <div class="pp-photo-caption pp-photo-caption-below" itemprop="caption">Professional Quality</div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-------------------END----------------------1.3.2-->
-
-                    <!-------------------START----------------------1.3.3-->
-                    <div class="fl-col fl-node-58e9c2c80416f fl-col-small" data-node="58e9c2c80416f">
-                      <div class="fl-col-content fl-node-content">
-                        <div class="fl-module fl-module-pp-image fl-node-58e9c28b454d7" data-node="58e9c28b454d7">
-                          <div class="fl-module-content fl-node-content">
-                            <div class="pp-photo-container">
-                              <div class="pp-photo pp-photo-align-center pp-photo-align-responsive-default" itemscope itemtype="http://schema.org/ImageObject">
-                                <div class="pp-photo-content ">
-                                  <div class="pp-photo-content-inner">
-                                    <img loading="lazy" width="245" height="172" class="pp-photo-img wp-image-24226 size-full" src="Images/Logos/cover3.jpg" alt="Professional Quality" itemprop="image"  />
-                                    <div class="pp-overlay-bg"></div>
-                                    <div class="pp-photo-caption pp-photo-caption-below" itemprop="caption">Professional Quality</div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-------------------END----------------------1.3.3-->
-
-                    <!-------------------START----------------------1.3.4-->
-                    <div class="fl-col fl-node-58e9c2c80416f fl-col-small" data-node="58e9c2c80416f">
-                      <div class="fl-col-content fl-node-content">
-                        <div class="fl-module fl-module-pp-image fl-node-58e9c28b454d7" data-node="58e9c28b454d7">
-                          <div class="fl-module-content fl-node-content">
-                            <div class="pp-photo-container">
-                              <div class="pp-photo pp-photo-align-center pp-photo-align-responsive-default" itemscope itemtype="http://schema.org/ImageObject">
-                                <div class="pp-photo-content ">
-                                  <div class="pp-photo-content-inner">
-                                    <img loading="lazy" width="245" height="172" class="pp-photo-img wp-image-24226 size-full" src="Images/Logos/cover4.jpg" alt="Professional Quality" itemprop="image"  />
-                                    <div class="pp-overlay-bg"></div>
-                                    <div class="pp-photo-caption pp-photo-caption-below" itemprop="caption">Professional Quality</div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-------------------END----------------------1.3.4-->
+                    
                   </div>
 <!------------------------------------------------------End--------------------------------------------------------------------------------------------------------------------1.3-->
 
 
-                </div>
-              </div>
-            </div>
-
-            <div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-59250bcd95b8c" data-node="59250bcd95b8c">
-              <div class="fl-row-content-wrap">
-                <div class="uabb-row-separator uabb-top-row-separator" >
-                </div>
-
-                <div class="fl-row-content fl-row-fixed-width fl-node-content">
-                  <div class="fl-col-group fl-node-59250bcda6fa9" data-node="59250bcda6fa9">
-                    <div class="fl-col fl-node-59250bcda7193 fl-col-has-cols" data-node="59250bcda7193">
-                      <div class="fl-col-content fl-node-content">  
-                        <div class="fl-col-group fl-node-59250e4789265 fl-col-group-nested" data-node="59250e4789265">
-                          <div class="fl-col fl-node-59250e4789540 fl-col-small" data-node="59250e4789540">
-                            <div class="fl-col-content fl-node-content">
-                              <div class="fl-module fl-module-photo fl-node-59250e50e7d70" data-node="59250e50e7d70">
-                                <div class="fl-module-content fl-node-content">
-                                  <div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
-                                    <div class="fl-photo-content fl-photo-img-jpg">
-                                      <a href="" target="_self" itemprop="url">
-                                      <img loading="lazy" class="fl-photo-img wp-image-24571 size-medium" src="Images/comingsoon.png" alt="the ultimate guide to picking a perfect photo booth" itemprop="image" height="300" width="179" title="picking a photo booth guide" srcset="Images/comingsoon.png" sizes="(max-width: 179px) 100vw, 179px" />
-                                      </a>
-                                    </div>
-                                  </div>
-                                </div>
-                             </div>
-                           </div>
-                          </div>
-
-                          <div class="fl-col fl-node-59250e478957f" data-node="59250e478957f">
-                            <div class="fl-col-content fl-node-content">
-                              <div class="fl-module fl-module-rich-text fl-node-59250e7f825c7" data-node="59250e7f825c7">
-                                <div class="fl-module-content fl-node-content">
-                                  <div class="fl-rich-text">
-                                    <h2>Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum.</h2>
-                                    <p> Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum.</p>
-                                    <p><span style="font-size: 20px;"></span></p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -658,7 +484,7 @@ CSS Migrated from BB theme:
 
 
 
-            <div class="fl-row fl-row-full-width fl-row-bg-color fl-node-58b55495446ff" data-node="58b55495446ff">
+            <div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-59250bcd95b8c" data-node="59250bcd95b8c">
               <div class="fl-row-content-wrap">
 
                 <div class="uabb-row-separator uabb-top-row-separator" >
@@ -670,22 +496,21 @@ CSS Migrated from BB theme:
                       <div class="fl-col-content fl-node-content">
                         <div class="fl-module fl-module-heading fl-node-58e9bed1ecf29" data-node="58e9bed1ecf29">
                           <div class="fl-module-content fl-node-content">
-                            <h2 class="fl-heading">
-                            <span class="fl-heading-text">Why Choose Snap Booth  Photo Booths?</span>
+                            <h2 class="heading-title">
+                            <span class="fl-heading-text">Why Choose Snap Booth Photos?</span>
                             </h2>
                           </div>
                         </div>
                       <div class="fl-module fl-module-rich-text fl-node-58e9bdee5c528" data-node="58e9bdee5c528">
                         <div class="fl-module-content fl-node-content">
                           <div class="fl-rich-text">
-                        <p><img loading="lazy" class="alignleft wp-image-24219 size-medium" src="Images/comingsoon.png" alt="" width="300" height="200" style="margin: 0px 40px" srcset="Images/comingsoon.png 768w, https://photoboothplus.com/wp-content/uploads/2017/02/4x6-photo-booth-print-1024x683.jpg 1024w, https://photoboothplus.com/wp-content/uploads/2017/02/4x6-photo-booth-print.jpg 1234w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+                        <p><img loading="lazy" class="alignleft wp-image-24219 size-medium" src="Images/Logos/sbpLogoDark.png" alt="" width="300" height="200" style="margin: 0px 40px" srcset="Images/Logos/sbpLogoDark.png 768w, Images/Logos/sbpLogoDark.png 1024w, Images/Logos/sbpLogoDark.png 1234w" sizes="(max-width: 300px) 100vw, 300px" /></p>
                       <ul>
-                      <li><b>FILLER </b>– Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum.</li>
-                      <li><b>FILLER </b>– Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum.</li>
-                      <li><b>FILLER </b>- Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum.</li>
-                      <li><b>FILLER </b>– Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum.</li>
-                      <li><b>FILLER </b>– Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum.</li>
-                      <li><b>FILLER</b>– Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum.</li>
+                      <li><b>Stress free set-up</b>–  Never worry about set-up or tear down! We ensure early set-up free of charge to make sure evrything goes according to plan.</li>
+                      <li><b>Custom grapics tailored to your event</b>– Our graphics and photo strip designs are custom made to your satisfaction and can include anything from company logos to custom hashtags.</li>
+                      <li><b>Prints for each guest</b>- We'll make sure each of your guests gets a copy of memories to last a lifetime! Multiple people in one shot? No problem! We'll make sure everyone in the picture gets their own copy!</li>
+                      <li><b>A bundle of fun!</b>– At Snap Booth Photos, our priority is to not only create memories through photos, but have fun doing it! You want a photo booth that brings excitment to your event, and Snap Booth Photos promises to deliver.</li>
+
                       </ul>
                       </div>
                         </div>
@@ -702,7 +527,7 @@ CSS Migrated from BB theme:
 
 
 
-            <div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-58e9c0251c784" data-node="58e9c0251c784">
+            <div class="fl-row fl-row-full-width fl-row-bg-color fl-node-58e9c078da856" data-node="58e9c078da856">
               <div class="fl-row-content-wrap">
 
                 <div class="uabb-row-separator uabb-top-row-separator" >
@@ -718,10 +543,10 @@ CSS Migrated from BB theme:
                               <div class="fl-module fl-module-rich-text fl-node-58e9c0344badb" data-node="58e9c0344badb">
                                 <div class="fl-module-content fl-node-content">
                                   <div class="fl-rich-text">
-                                    <h3>Lorem Ipsum</h3>
-                                    <p>Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum.</p>
-                                    <p>Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum..</p>
-                                    <p>Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum.</p>
+                                    <h3>GREAT FOR EVERYONE!</h3>
+                                    <p>When your guests find out there is a photo booth at your event, they're sure to stop by and <i>snap</i> a photo!</p>
+                                    <p>Young to old, all your guest can preserve a memory of your event with help of a photo booth. Everyone can join in on the fun!</p>
+                                    <p>Not only will your guests have a blast snapping photos, they'll get to take the memories home with them and have a keepsake they'll remeber forever. </p>
                                   </div>
                                 </div>
                               </div>
@@ -733,7 +558,7 @@ CSS Migrated from BB theme:
                         <div class="fl-module-content fl-node-content">
                           <div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
                         <div class="fl-photo-content fl-photo-img-jpg">
-                              <img loading="lazy" class="fl-photo-img wp-image-24218 size-full" src="Images/comingsoon.png" alt="4-panel-sample" itemprop="image" height="300" width="200" title="4-panel-sample"  />
+                              <img loading="lazy" class="fl-photo-img wp-image-24218 size-full" src="Images/2column.jpg" alt="4-panel-sample" itemprop="image" height="450" width="300" title="4-panel-sample"  />
                                 </div>
                         </div>
                         </div>
@@ -753,7 +578,7 @@ CSS Migrated from BB theme:
 
 
 
-            <div class="fl-row fl-row-full-width fl-row-bg-color fl-node-58e9c078da856" data-node="58e9c078da856">
+            <div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-58e9c0251c784" data-node="58e9c0251c784">
               <div class="fl-row-content-wrap">
                 <div class="uabb-row-separator uabb-top-row-separator" >
                 </div>
@@ -768,7 +593,7 @@ CSS Migrated from BB theme:
                               <div class="pp-photo pp-photo-align-center pp-photo-align-responsive-default" itemscope itemtype="http://schema.org/ImageObject">
                                 <div class="pp-photo-content ">
                                   <div class="pp-photo-content-inner">
-                                    <img loading="lazy" width="200" height="600" class="pp-photo-img wp-image-24217 size-full" src="Images/comingsoon.png" alt="3-image-strip" itemprop="image" srcset="Images/comingsoon.png" sizes="(max-width: 200px) 100vw, 200px" />
+                                    <img loading="lazy" width="200" height="600" class="pp-photo-img wp-image-24217 size-full" src="Images/Photo Strip.png" alt="3-image-strip" itemprop="image" srcset="Images/Photo Strip.png" sizes="(max-width: 200px) 100vw, 200px" />
                                   <div class="pp-overlay-bg"></div>
                                   </div>
                                 </div>
@@ -786,14 +611,14 @@ CSS Migrated from BB theme:
                                 <div class="fl-rich-text">
                                   <p>&nbsp;</p>
                                   <h3>How Do I Book a Photo Booth?</h3>
-                                  <h4>1) FILLER</h4>
-                                  <p>Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum.</p>
-                                  <h4>2) FILLER</h4>
-                                  <p> Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum.</p>
-                                  <h4>3) FILLER</h4>
-                                  <p>Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum.</p>
-                                  <h4>4) FILLER</h4>
-                                  <p>Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum.</p>
+                                  <h4>1) <a href="RatesAvailability.html">CHECK AVAILABILITY</a></h4>
+                                  <p>Submit a request to see if the date of your event is avaviable. It's best to check availability even if you're in the early stages of planning as reservations are regularly booked.</p>
+                                  <h4>2) PICK YOUR PACKAGE & RECEIVE YOUR FREE QUOTE</h4>
+                                  <p> Choose a package that's just right for your event! Decide how long you'd like your booth, choose your print style (classic 2X6 photo strips or 4X6 portraits), and add any add-ons!   </p>
+                                  <h4>3) RESERVE YOUR BOOTH </h4>
+                                  <p>Once you've picked package and decided the details of your event, we'll put everything in writing for you to reserve your booth with a deposit and signed contract </p>
+                                  <h4>4) CUSTOMIZE CUSTOMIZE CUSTOMIZE</h4>
+                                  <p>After your booth is reserved, we'll work with you to create your entirely custom experience. From designing a personalized logo for your prints, to custom screens for your booth, Snap Booth Photos does it all to ensure your photo booth eperience is top notch!</p>
                                   <h4>5) Enjoy!</h4>
                                 </div>
                               </div>
@@ -822,7 +647,7 @@ CSS Migrated from BB theme:
                   <div class="fl-col-group fl-node-59078ee664db2" data-node="59078ee664db2">
                     <div class="fl-col fl-node-59078ee664dfe fl-col-has-cols" data-node="59078ee664dfe">
                       <div class="fl-col-content fl-node-content">
-
+                  <!--   
                         <div class="fl-module fl-module-rich-text fl-node-59078ee664e3f" data-node="59078ee664e3f">
                           <div class="fl-module fl-module-rich-text fl-node-59078ee664e3f" data-node="59078ee664e3f">
                             <div class="fl-module-content fl-node-content">
@@ -858,7 +683,7 @@ CSS Migrated from BB theme:
                             </div>
                           </div>
                         </div>
-
+                      -->
                                             <!-----------Start(X X X)Footer----------------->
                     <div class="fl-col-group fl-node-59078ee664e7e fl-col-group-nested" data-node="59078ee664e7e">
                       <!--Footer (X 0 0)-->
@@ -898,7 +723,7 @@ CSS Migrated from BB theme:
                                   <li><a href="contact.html">Contact</a></li>
                                   <li><a href="about.html">About Us</a></li>
                                   <li><a href="photo-booth-video.html">Videos</a></li>
-                                  <li><a href="http://galleries.snapfuze.com/">Gallery</a></li>
+                                  <li><a href="">Gallery</a></li>
                                   <li><a href="">Ideas</a></li>  <!--Similar to guide-->
                                   <li> <a href="FAQ.html">FAQ</a> </li>
                                   <li><a href="testimonials.html">Testimonials</a></li>
@@ -920,10 +745,10 @@ CSS Migrated from BB theme:
 
                                 <h4>Reach Out</h4>
                                 <p>
-                                  Snap Booth Photo Booths<br />
-                                  201 Cherry Lane Dr<br />
+                                  Snap Booth Photos<br />
+                                  <br />
                                   Milan, MI 48160<br />
-                                  <a href="tel:">(XXX) XXX-XXXX</a>
+                                  <a href="tel:">(734) 478-6298</a>
                                 </p>
 
                               </div>
@@ -1038,242 +863,55 @@ CSS Migrated from BB theme:
 
 </div><!-- .fl-page -->
 <!-------------------------------Finish Content-------------------------------------------------->
+<script>
+var quadimages = document.querySelectorAll("#quad figure");
+  for(i=0; i<quadimages.length; i++) {
+    quadimages[i].addEventListener('mouseover', function(){ this.classList.toggle("expanded"); quad.classList.toggle("full") }); 
+    quadimages[i].addEventListener('mouseout', function(){ this.classList.toggle("expanded"); quad.classList.toggle("full") }); 
+  }
+  </script>
 
 
 
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=297033134396801&amp;ev=PageView&amp;noscript=1"/></noscript>
-<script src='https://photoboothplus.com/wp-content/uploads/bb-plugin/cache/6-layout.js?ver=884a9421c1d6fd3bcb7aaa799f458aa6' id='fl-builder-layout-6-js'></script>
-<script src='https://photoboothplus.com/wp-content/plugins/bb-plugin/js/jquery.ba-throttle-debounce.min.js?ver=2.4.2.2' id='jquery-throttle-js'></script>
-<script src='https://photoboothplus.com/wp-content/plugins/bb-plugin/js/jquery.magnificpopup.min.js?ver=2.4.2.2' id='jquery-magnificpopup-js'></script>
-<script src='https://photoboothplus.com/wp-content/themes/bb-theme/js/bootstrap.min.js?ver=1.7.8' id='bootstrap-js'></script>
+
 
 <script id='fl-automator-js-extra'>
   var themeopts = {"medium_breakpoint":"992","mobile_breakpoint":"768"};
 </script>
 
-<script src='https://photoboothplus.com/wp-content/themes/bb-theme/js/theme.min.js?ver=1.7.8' id='fl-automator-js'></script>
-<script src='https://photoboothplus.com/wp-includes/js/wp-embed.min.js?ver=5.7.6' id='wp-embed-js'></script>
-
-<script id='aepc-pixel-events-js-extra'>
-  var aepc_pixel_events = {"custom_events":{"AdvancedEvents":[{"params":{"login_status":"not_logged_in","post_type":"page","object_id":"6","object_type":"home"}}]},"api":{"root":"https:\/\/photoboothplus.com\/wp-json\/","nonce":"56ee96128d"}};
-</script>
-<script src='https://photoboothplus.com/wp-content/plugins/pixel-caffeine/build/frontend.js?ver=2.3.3' id='aepc-pixel-events-js'></script>
 
 
 <script src="Components/navBar.js"></script>
 <script src="Components/footer.js"></script>
+
+
+
+
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCoSxR4qkdQhHvvC6YIcRii2vsm8rtu0Vk",
+    authDomain: "snap-booth-photos.firebaseapp.com",
+    databaseURL: "https://snap-booth-photos-default-rtdb.firebaseio.com",
+    projectId: "snap-booth-photos",
+    storageBucket: "snap-booth-photos.appspot.com",
+    messagingSenderId: "350438842610",
+    appId: "1:350438842610:web:dc05af5e1b118c1e7b706b",
+    measurementId: "G-BZW342QWVY"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-------------------START----------------------1.3.1-->
-<div class="fl-col fl-node-58e9c2c80416f fl-col-small" data-node="58e9c2c80416f">
-  <div class="fl-col-content fl-node-content">
-    <div class="fl-module fl-module-pp-image fl-node-58e9c28b454d7" data-node="58e9c28b454d7">
-      <div class="fl-module-content fl-node-content">
-        <div class="pp-photo-container">
-          <div class="pp-photo pp-photo-align-center pp-photo-align-responsive-default" itemscope itemtype="http://schema.org/ImageObject">
-            <div class="pp-photo-content ">
-              <div class="pp-photo-content-inner">
-                <img loading="lazy" width="245" height="172" class="pp-photo-img wp-image-24226 size-full" src="Images/Logos/cover1.jpg" alt="Professional Quality" itemprop="image"  />
-                <div class="pp-overlay-bg"></div>
-                <div class="pp-photo-caption pp-photo-caption-below" itemprop="caption">Professional Quality</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-------------------END----------------------1.3.1-->
-
-<!-------------------START----------------------1.3.2-->
-<div class="fl-col fl-node-58e9c2c80416f fl-col-small" data-node="58e9c2c80416f">
-  <div class="fl-col-content fl-node-content">
-    <div class="fl-module fl-module-pp-image fl-node-58e9c28b454d7" data-node="58e9c28b454d7">
-      <div class="fl-module-content fl-node-content">
-        <div class="pp-photo-container">
-          <div class="pp-photo pp-photo-align-center pp-photo-align-responsive-default" itemscope itemtype="http://schema.org/ImageObject">
-            <div class="pp-photo-content ">
-              <div class="pp-photo-content-inner">
-                <img loading="lazy" width="245" height="172" class="pp-photo-img wp-image-24226 size-full" src="Images/Logos/cover2.jpg" alt="Professional Quality" itemprop="image"  />
-                <div class="pp-overlay-bg"></div>
-                <div class="pp-photo-caption pp-photo-caption-below" itemprop="caption">Professional Quality</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-------------------END----------------------1.3.2-->
-
-<!-------------------START----------------------1.3.3-->
-<div class="fl-col fl-node-58e9c2c80416f fl-col-small" data-node="58e9c2c80416f">
-  <div class="fl-col-content fl-node-content">
-    <div class="fl-module fl-module-pp-image fl-node-58e9c28b454d7" data-node="58e9c28b454d7">
-      <div class="fl-module-content fl-node-content">
-        <div class="pp-photo-container">
-          <div class="pp-photo pp-photo-align-center pp-photo-align-responsive-default" itemscope itemtype="http://schema.org/ImageObject">
-            <div class="pp-photo-content ">
-              <div class="pp-photo-content-inner">
-                <img loading="lazy" width="245" height="172" class="pp-photo-img wp-image-24226 size-full" src="Images/Logos/cover3.jpg" alt="Professional Quality" itemprop="image"  />
-                <div class="pp-overlay-bg"></div>
-                <div class="pp-photo-caption pp-photo-caption-below" itemprop="caption">Professional Quality</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-------------------END----------------------1.3.3-->
-
-<!-------------------START----------------------1.3.4-->
-<div class="fl-col fl-node-58e9c2c80416f fl-col-small" data-node="58e9c2c80416f">
-  <div class="fl-col-content fl-node-content">
-    <div class="fl-module fl-module-pp-image fl-node-58e9c28b454d7" data-node="58e9c28b454d7">
-      <div class="fl-module-content fl-node-content">
-        <div class="pp-photo-container">
-          <div class="pp-photo pp-photo-align-center pp-photo-align-responsive-default" itemscope itemtype="http://schema.org/ImageObject">
-            <div class="pp-photo-content ">
-              <div class="pp-photo-content-inner">
-                <img loading="lazy" width="245" height="172" class="pp-photo-img wp-image-24226 size-full" src="Images/Logos/cover4.jpg" alt="Professional Quality" itemprop="image"  />
-                <div class="pp-overlay-bg"></div>
-                <div class="pp-photo-caption pp-photo-caption-below" itemprop="caption">Professional Quality</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-------------------END----------------------1.3.4-->
-
-
-
-
-
-
-
-
-
-
-<div class="gallery">
-  <div class="gallery__column">
-    <a href="" target="_blank" class="gallery__link">
-      <figure class="gallery__thumb">
-        <img src="Images/GalleryImages/img1.jpeg" alt="Portrait by Jessica Felicio" class="gallery__image">
-        <figcaption class="gallery__caption"></figcaption>
-      </figure>
-    </a>
-
-    <a href="" target="_blank" class="gallery__link">
-      <figure class="gallery__thumb">
-        <img src="Images/Photo Strip2.png" alt="Portrait by Oladimeji Odunsi" class="gallery__image">
-        <figcaption class="gallery__caption"></figcaption>
-      </figure>
-    </a>
-
-    <a href="" target="_blank" class="gallery__link">
-      <figure class="gallery__thumb">
-        <img src="Images/GalleryImages/img3.jpeg" alt="Portrait by Alex Perez" class="gallery__image">
-        <figcaption class="gallery__caption"></figcaption>
-      </figure>
-    </a>
-  </div>
-  
-  <div class="gallery__column">
-    <a href="" target="_blank" class="gallery__link">
-      <figure class="gallery__thumb">
-        <img src="Images/GalleryImages/img2.jpeg" alt="Portrait by Noah Buscher" class="gallery__image">
-        <figcaption class="gallery__caption"></figcaption>
-      </figure>
-    </a>
-    
-    <a href="https://unsplash.com/@von_co" target="_blank" class="gallery__link">
-      <figure class="gallery__thumb">
-        <img src="Images/GalleryImages/img3.jpeg" alt="Portrait by Ivana Cajina" class="gallery__image">
-        <figcaption class="gallery__caption"></figcaption>
-      </figure>
-    </a>
-
-    <a href="" target="_blank" class="gallery__link">
-      <figure class="gallery__thumb">
-        <img src="Images/Photo Strip.png" alt="Portrait by Sam Burriss" class="gallery__image">
-        <figcaption class="gallery__caption"></figcaption>
-      </figure>
-    </a>
-  </div>
-  
-  <div class="gallery__column">
-    <a href="" target="_blank" class="gallery__link">
-      <figure class="gallery__thumb">
-        <img src="Images/Photo Strip2.png" alt="Portrait by Mari Lezhava" class="gallery__image">
-        <figcaption class="gallery__caption"></figcaption>
-      </figure>
-    </a>
-    
-    <a href="" target="_blank" class="gallery__link">
-      <figure class="gallery__thumb">
-        <img src="Images/GalleryImages/img1.jpeg" alt="Portrait by Ethan Haddox" class="gallery__image">
-        <figcaption class="gallery__caption"></figcaption>
-      </figure>
-    </a>
-
-    <a href="i" target="_blank" class="gallery__link">
-      <figure class="gallery__thumb">
-        <img src="Images/GalleryImages/img2.jpeg" alt="Portrait by Amir Geshani" class="gallery__image">
-        <figcaption class="gallery__caption"></figcaption>
-      </figure>
-    </a>
-  </div>
-  
-  <div class="gallery__column">
-    <a href="" target="_blank" class="gallery__link">
-      <figure class="gallery__thumb">
-        <img src="Images/GalleryImages/img3.jpeg" alt="Portrait by Guilian Fremaux" class="gallery__image">
-        <figcaption class="gallery__caption"></figcaption>
-      </figure>
-    </a>
-
-    <a href="" target="_blank" class="gallery__link">
-      <figure class="gallery__thumb">
-        <img src="Images/GalleryImages/img1.jpeg" alt="Portrait by Jasmin Chew" class="gallery__image">
-        <figcaption class="gallery__caption"></figcaption>
-      </figure>
-    </a>
-    
-    <a href="" target="_blank" class="gallery__link">
-      <figure class="gallery__thumb">
-        <img src="Images/Photo Strip.png" alt="Portrait by Dima DallAcqua" class="gallery__image">
-        <figcaption class="gallery__caption"></figcaption>
-      </figure>
-    </a>
-  </div>
-</div>
