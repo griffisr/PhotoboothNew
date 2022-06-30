@@ -21,11 +21,12 @@ div#FAQquad {
     bottom: 0; width: 100%;
       transition: 0s 0s; 
   }
-  .expanded { transform: scale(1.25); z-index: 5;  }
+  .expanded { transform: scale(1.33); z-index: 5;  }
   div#quad figure.expanded figcaption { opacity: .8; }
-  div.full figure:not(.expanded) { pointer-events: none; }div#quad { 
+  div.full figure:not(.expanded) { pointer-events: none; }
+  div#FAQquad { 
   background-color: #000; 
-  font-size: 0; width: 60%; 
+  font-size: 0; width: 100%; 
   margin: 0 auto;
   box-shadow: 0 0 12px rgba(0,0,0,0.8);
 }
