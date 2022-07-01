@@ -44,7 +44,6 @@
       <link rel='stylesheet' id='wp-block-library-css' type="text/css" href='CSS/wp-includes/css/dist/block-library/style.min.css' media='all' />
       <link rel='stylesheet' id='wp-block-library-theme-css' type="text/css" href='CSS/wp-includes/css/dist/block-library/theme.min.css' media='all' />
       <link rel='stylesheet' id='fl-builder-layout-6-css' type="text/css" href='CSS/wp-content/uploads/bb-plugin/cache/6-layout.css' media='all' />
-      <link rel='stylesheet' id='cpsh-shortcodes-css' type="text/css" href='CSS/wp-content/plugins/column-shortcodes//assets/css/shortcodes.css' media='all' />
       <link rel='stylesheet' id='jquery-magnificpopup-css' type="text/css" href='CSS/wp-content/plugins/bb-plugin/css/jquery.magnificpopup.min.css' media='all' />
       <link rel='stylesheet' id='bootstrap-css' type="text/css" href='CSS/wp-content/themes/bb-theme/css/bootstrap.min.css' media='all' />
       <link rel='stylesheet' id='fl-automator-skin-css'  href='CSS/wp-content/uploads/bb-theme/skin-60abfa396f860.css' media='all' />
@@ -56,8 +55,8 @@
       <script src='JS/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
       
       
-      <link rel="canonical" href="https://rileyg.me/" />
-      <link rel='shortlink' href='https://rileyg.me/' />
+      <link rel="canonical" href="http://snapboothphotos.com/" />
+      <link rel='shortlink' href='http://snapboothphotos.com/' />
       
       
       <style id="wp-custom-css">
