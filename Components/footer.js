@@ -88,7 +88,6 @@
                 <h4>Reach Out</h4>
                 <p>
                   Snap Booth Photos<br />
-                  <br />
                   Milan, MI 48160<br />
                   <a href="tel:">(734) 478-6298</a>
                 </p>
