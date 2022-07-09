@@ -258,6 +258,14 @@
   justify-content: flex-start;
   -webkit-justify-content: flex-start;
 }
+
+@media all and (device-width: 450px) and (device-height: 1024px) and (orientation: portrait) {
+  .fl-node-58dabc53d4df8{
+
+    padding-left: 50px;
+
+  }
+}
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
   .fl-row-full-height .fl-row-content-wrap {
     min-height: 1024px;
