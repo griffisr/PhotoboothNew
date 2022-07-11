@@ -2212,7 +2212,7 @@ img.mfp-img {
 }
 @media only screen and (max-width: 480px) {
   .fl-node-58e97f2eb9860 .pp-dual-button-content .pp-dual-button-inner {
-    float: none;
+    float: ;
   }
   .fl-node-58e97f2eb9860 .pp-dual-button-content .pp-dual-button-inner {
     display: block;
